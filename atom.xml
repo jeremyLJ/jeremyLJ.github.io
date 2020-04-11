@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>OldLostGuy</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://jeremylj.github.io/"/>
+  <updated>2020-04-10T11:31:39.975Z</updated>
+  <id>https://jeremylj.github.io/</id>
+  
+  <author>
+    <name>JeremyLJ</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>你好，博客</title>
+    <link href="https://jeremylj.github.io/2020/04/10/hello/"/>
+    <id>https://jeremylj.github.io/2020/04/10/hello/</id>
+    <published>2020-04-10T11:23:27.000Z</published>
+    <updated>2020-04-10T11:31:39.975Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+</feed>
