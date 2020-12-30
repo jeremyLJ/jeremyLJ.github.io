@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://jeremylj.github.io/"/>
-  <updated>2020-04-10T11:31:39.975Z</updated>
+  <updated>2020-12-30T15:21:06.855Z</updated>
   <id>https://jeremylj.github.io/</id>
   
   <author>
@@ -17,11 +17,33 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>AspNetCore集成gRPC体验</title>
+    <link href="https://jeremylj.github.io/2020/12/30/aspnetcore_grpc_start/"/>
+    <id>https://jeremylj.github.io/2020/12/30/aspnetcore_grpc_start/</id>
+    <published>2020-12-30T14:07:18.000Z</published>
+    <updated>2020-12-30T15:21:06.855Z</updated>
+    
+    <content type="html"><![CDATA[<p>gRPC最早是由Google开发，是一款现代、开源、高性能的RPC框架。默认gRPC使用Protocol Buffer作为服务的接口定义语言（Interface Definition Language, IDL）和信息交换格式，支持多种语言，支持客户端、服务器以及双向流式调用处理<a href="https://grpc.io/docs/what-is-grpc/introduction" target="_blank" rel="noopener">^1</a>。</p><p>下面我们一起来看下如何基于AspNetCore来创建一个gRPC服务端（基于Windows10机器）。</p><h3 id="环境准备"><a href="#环境准备" class="headerlink" title="环境准备"></a>环境准备</h3><ul><li>Visual Studio 2019 16.4及以上版本 （当然也可以使用Visual Studio Code来开发）</li><li>dotNetCore SDK 3.1及以上版本</li></ul><h3 id="创建gRPC服务端"><a href="#创建gRPC服务端" class="headerlink" title="创建gRPC服务端"></a>创建gRPC服务端</h3><ol><li>使用Visual Studio的gRPC模板快速创建包含默认实现的gRPC服务</li></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;gRPC最早是由Google开发，是一款现代、开源、高性能的RPC框架。默认gRPC使用Protocol Buffer作为服务的接口定义语言（Interface Definition Language, IDL）和信息交换格式，支持多种语言，支持客户端、服务器以及双向流式调
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>你好，博客</title>
     <link href="https://jeremylj.github.io/2020/04/10/hello/"/>
     <id>https://jeremylj.github.io/2020/04/10/hello/</id>
     <published>2020-04-10T11:23:27.000Z</published>
-    <updated>2020-04-10T11:31:39.975Z</updated>
+    <updated>2020-12-30T14:06:36.140Z</updated>
     
     <summary type="html">
     
