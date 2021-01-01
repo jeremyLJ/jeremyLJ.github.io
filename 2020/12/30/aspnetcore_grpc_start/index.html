@@ -16,19 +16,19 @@
 <li>
 <p>使用Visual Studio的gRPC模板快速创建包含默认实现的gRPC服务<br>
 通过输入<code>grpc</code>关键字选择项目模板<br>
-<img src="/2020/12/30/aspnetcore_grpc_start/vs_grpc_start_one.PNG" alt="第1步"></p>
+<img src="vs_grpc_start_one.PNG" alt="第1步"></p>
 </li>
 <li>
 <p>设置项目名称和文件存放路径<br>
-<img src="/2020/12/30/aspnetcore_grpc_start/vs_grpc_start_two.PNG" alt="第2步"></p>
+<img src="vs_grpc_start_two.PNG" alt="第2步"></p>
 </li>
 <li>
 <p>不需要设置Authentication，不需启用Docker Support，直接下一步<br>
-<img src="/2020/12/30/aspnetcore_grpc_start/vs_grpc_start_three.PNG" alt="第3步"></p>
+<img src="vs_grpc_start_three.PNG" alt="第3步"></p>
 </li>
 <li>
 <p>这样一个AspNetCore gRPC项目就创建好了，模板默认实现了一个GreetService，包含一个SayHello方法<br>
-<img src="/2020/12/30/aspnetcore_grpc_start/vs_grpc_start_four.PNG" alt="gRPC模板默认的项目结构"></p>
+<img src="vs_grpc_start_four.PNG" alt="gRPC模板默认的项目结构"></p>
 </li>
 </ol>
 <h3 id="熟悉模板项目中的文件及配置"><a class="header-anchor" href="#熟悉模板项目中的文件及配置">¶</a>熟悉模板项目中的文件及配置</h3>
@@ -65,12 +65,12 @@
 <ol>
 <li>
 <p>在Visual Studio开发环境中，启动项目最直接的就是按下F5（当然也可以通过命令行dotnet run来启动）。通过Visual Stuido第一运行gRPC服务的时候，会弹出一个是否信任AspNetCore SSL证书的确认框，点击[<strong>Yes</strong>]即可，下一步点击[<strong>是</strong>]安装证书。<br>
-<img src="/2020/12/30/aspnetcore_grpc_start/vs_grpc_cert_dialog.PNG" alt><br>
-<img src="/2020/12/30/aspnetcore_grpc_start/vs_grpc_cert_install.PNG" alt></p>
+<img src="vs_grpc_cert_dialog.PNG" alt=""><br>
+<img src="vs_grpc_cert_install.PNG" alt=""></p>
 </li>
 <li>
 <p>现在gRPC服务就可以跑起来了，你会看到如下的命令行输出，通过打出来的日志<code>https://localhost:5001</code>，https表明启动的是受TLS保护的服务端点。<sup class="footnote-ref"><a href="#fn3" id="fnref3">[3]</a></sup><br>
-<img src="/2020/12/30/aspnetcore_grpc_start/aspnetcore_grpc_console.PNG" alt></p>
+<img src="aspnetcore_grpc_console.PNG" alt=""></p>
 </li>
 </ol>
 <h3 id="结语"><a class="header-anchor" href="#结语">¶</a>结语</h3>
