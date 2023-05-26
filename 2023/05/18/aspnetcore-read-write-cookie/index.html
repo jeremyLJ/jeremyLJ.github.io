@@ -34,6 +34,8 @@
 <p>所以往Http Response回写cookie必须要在Response开始生成之前，我们可以借助context.Response.OnStarting()<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup>来实现。context.Response.OnStarting()用来注册一个回调callback，在Response开始生成之前会被执行，回调的执行顺序与注册顺序相反，意思就是最后注册的回调，最先被执行。</p>
 <p>通过Postman测试可以发现Response里有回写的cookie内容了。<br>
 <img src="aspnetcore_write_cookie_postman_test.PNG" alt="Postman测试结果"></p>
+<p>另外，如果需求是目标cookie的upsert需要基于Request传入的cookie值，那如果目标cookie的值被其他的middleware或者WebApi修改了，我们需要将其删除后，重新进行upsert。示例代码如下<sup class="footnote-ref"><a href="#fn2" id="fnref2">[2]</a></sup>：</p>
+<figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> setCookieHeaders = context.Response.GetTypedHeaders().SetCookie;</span><br><span class="line"><span class="keyword">var</span> targetCookie = setCookieHeaders.FirstOrDefault(c =&gt; c.Name == <span class="string">"cookie11"</span>);</span><br><span class="line"><span class="keyword">if</span>(targetCookie != <span class="literal">null</span>)</span><br><span class="line">&#123;</span><br><span class="line">    context.Response.Cookies.Delete(targetCookie.Name.Value);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>以上就是AspNetCore服务端读写cookie的内容。</p>
 <h3 id="结语"><a class="header-anchor" href="#结语">¶</a>结语</h3>
 <p>服务端读写cookie在传统的AspNet MVC架构是十分常规的操作，本篇借助了context.Response.OnStarting()注册回调来将cookie回写到Response中，这种实现方式相对优雅一些。</p>
@@ -49,6 +51,8 @@
 <section class="footnotes">
 <ol class="footnotes-list">
 <li id="fn1" class="footnote-item"><p><a href="https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.http.httpresponse.onstarting" target="_blank" rel="noopener">https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.http.httpresponse.onstarting</a> <a href="#fnref1" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn2" class="footnote-item"><p><a href="https://stackoverflow.com/questions/36899875/how-can-i-check-for-a-response-cookie-in-asp-net-core-mvc-aka-asp-net-5-rc1" target="_blank" rel="noopener">https://stackoverflow.com/questions/36899875/how-can-i-check-for-a-response-cookie-in-asp-net-core-mvc-aka-asp-net-5-rc1</a> <a href="#fnref2" class="footnote-backref">↩︎</a></p>
 </li>
 </ol>
 </section>
