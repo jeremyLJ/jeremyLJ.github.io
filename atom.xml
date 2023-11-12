@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://jeremylj.github.io/"/>
-  <updated>2023-07-09T03:32:22.461Z</updated>
+  <updated>2023-11-12T14:57:20.771Z</updated>
   <id>https://jeremylj.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>常用的Linux命令</title>
+    <link href="https://jeremylj.github.io/2023/11/12/handy-linux-cmds/"/>
+    <id>https://jeremylj.github.io/2023/11/12/handy-linux-cmds/</id>
+    <published>2023-11-12T14:27:23.000Z</published>
+    <updated>2023-11-12T14:57:20.771Z</updated>
+    
+    <content type="html"><![CDATA[<p>当今各种线上运行系统的服务大多数都是基于Linux环境部署的，那么掌握一些Linux常用的命令，将会大大提高日常的开发工作以及线上问题的排查的效率。</p><p><strong>搜索执行过的历史命令</strong></p><ul><li>Ctrl+R：可以根据输入的内容搜索最近一次执行过的相关命令，再次按下Ctrl+R可以继续搜索更早的命令；</li><li>Ctrl+G: 如果对于通过Ctrl+R搜索的命令不满意，可以通过Ctrl+G退出搜索模式；</li></ul><p><strong>命令修改及输入位置移动</strong></p><ul><li>Ctrl+A: 如果输入的命令很长，通过Ctrl+A将输入位置快速移动到命令开头；</li><li>Ctrl+E: 和Ctrl+A命令相反，可以将输入位置快速移动到命令结尾；</li><li>Ctrl+U: 可以将输入位置向左直到行首的命令删除，如果像快速删除一整行命令，可以先通过Ctrl+E将输入位置移动到行尾，然后按下Ctrl+U;</li></ul><h3 id="参考资料"><a class="header-anchor" href="#参考资料">¶</a>参考资料</h3><ol><li><a href="https://www.redhat.com/sysadmin/top-10-shortcuts" target="_blank" rel="noopener">https://www.redhat.com/sysadmin/top-10-shortcuts</a></li></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;当今各种线上运行系统的服务大多数都是基于Linux环境部署的，那么掌握一些Linux常用的命令，将会大大提高日常的开发工作以及线上问题的排查的效率。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;搜索执行过的历史命令&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Ctrl+R：可以根据输入的
+      
+    
+    </summary>
+    
+    
+    
+      <category term="linux" scheme="https://jeremylj.github.io/tags/linux/"/>
+    
+  </entry>
   
   <entry>
     <title>Windows本地搭建nuget包源</title>
